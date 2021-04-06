@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", showCoffees);
 /** Ici nous allons enregistrer notre service worker */
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
-    navigator.serviceWorker.register('/serviceworker.js')
+    navigator.serviceWorker.register('/serviceWorker.js')
     .then(()=> console.log('service worker OK'))
     .catch((err)=> console.log('service worker n\' a pas pui'))
   });
